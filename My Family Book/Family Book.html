@@ -1,0 +1,30 @@
+<html>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>My Family Book</title>
+<body align="center">
+<div class="w3-panel w3-pink">
+  <h1 class="w3-opacity">
+  <b>My Family Book</b></h1>
+</div>
+<br>
+<img class="w3-hover-sepia w3-round" id="p_image" src="main.jpeg">
+<br>
+<div class="w3-blue">
+  <h1 class="w3-text-orange" style="text-shadow:1px 1px 0 #444"id="p_name"></h1>
+</div>
+<button class="w3-button w3-ripple w3-red" onclick="update()">Next</button>
+</body>
+<script>
+x=0;
+var images=["main.jpeg","father.jpeg","mother.jpeg","brother.jpeg","me.png"]
+var names=["","Amarnath-Father","Sangeetha-Mother","Gautham Krishna-Brother","Maadhav Krishna-Me"]
+function update(){
+x++;
+if(x==5){
+x=0;
+}
+document.getElementById("p_image").src=images[x];
+document.getElementById("p_name").innerHTML=names[x];
+}
+</script>
+</html>
