@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>C80</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<center>
+<h3 style="margin-top: 20px; margin-bottom: 20px; ">
+	List of the students in my class
+</h3>
+
+<input type="text" placeholder="Name of the Guest" id="guest_name">
+
+<button onclick="submit()" id="submit_button">Submit</button>
+<hr>
+<div id="guest_names">
+</div>
+<hr>
+<button onclick="show()">Show</button>
+<br>
+<br>
+<div id="guest_list">
+</div>
+<hr>
+<button onclick="sort()">Sort</button>
+<br>
+<br>
+<div id="sorted_guest_list">
+</div>
+<hr>
+<input type="text" placeholder="Name of the Guest" id="search_bar">
+<button onclick="search_guest()">Search</button>
+<p id="result"></p>
+</center>
+</body>
+<script src="main.js"></script>
+</html>
