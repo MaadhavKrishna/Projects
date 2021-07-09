@@ -1,0 +1,67 @@
+<html>
+<head>
+
+<title>C81</title>
+<style>
+
+h1
+{
+	color: red; 
+	font-size: 40px;
+}
+.body_backgorund {
+}
+
+#myCanvas{
+background-color:white;
+border-color:black;
+border-width:2px;
+border-style:solid;
+}
+
+</style>
+</head>
+<body class="body_backgorund">
+
+<center>
+	<h1>Olympic Logo</h1>
+	<canvas id="myCanvas" width="600" height="400"></canvas>
+</center>
+</body>
+<script>
+canvas=document.getElementById("myCanvas");
+ctx=canvas.getContext("2d");
+
+lW=5;
+
+ctx.beginPath();
+ctx.strokeStyle="blue";
+ctx.lineWidth=lW;
+ctx.arc(215,210,40,0,2*Math.PI);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle="black";
+ctx.lineWidth=lW;
+ctx.arc(300,210,40,0,2*Math.PI);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle="red";
+ctx.lineWidth=lW;
+ctx.arc(385,205,40,0,2*Math.PI);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle="gold";
+ctx.lineWidth=lW;
+ctx.arc(260,270,40,0,2*Math.PI);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle="green";
+ctx.lineWidth=lW;
+ctx.arc(350,265,40,0,2*Math.PI);
+ctx.stroke();
+</script>
+</html>
