@@ -1,0 +1,31 @@
+<html>
+<style>
+body{
+text-align:center;
+background-image:url('download.jpeg');
+background-repeat:no-repeat;
+background-size: cover;
+}
+canvas{
+border-style:solid;
+background-color:white;
+}
+</style>
+<body>
+	<h1>Circle Tracer</h1>
+	<canvas id="myCanvas" width="600" height="400"></canvas>
+	
+	<div>
+	<p>Color - </p>
+	<input id="color" type="text" placeholder="Enter a color">
+	<p>Line Width - </p>
+	<input id="width" type="text" placeholder="Enter a number">
+	<p>Radius - </p>
+	<input id="radius" type="text" placeholder="Enter a number">
+	<br>
+	<br>
+	<button onclick="clearArea()">Clear Canvas</button>
+	</div>
+</body>
+<script src="Script.js"></script>
+</html>
