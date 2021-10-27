@@ -40,8 +40,8 @@ canvas.addEventListener("mousemove", myMousemove);
 
 function myMousemove(e){
 console.log("mousemove");
-current_x=e.clientX;
-current_y=e.clientY;
+current_x=e.clientX-canvas.offsetLeft;
+current_y=e.clientY-canvas.offsetTop;
 if(mouseEvent=="mousedown"){
 ctx.beginPath();
 ctx.strokeStyle=color;
