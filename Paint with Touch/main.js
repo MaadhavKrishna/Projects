@@ -13,7 +13,7 @@ var last_position_of_x, last_position_of_y, last_position_of_touch_x, last_posit
     var new_width=width-70;
     var new_height=height-300;
 
-    if(width<1025){
+    if(width<1281){
         document.getElementById("myCanvas").width=new_width;
         document.getElementById("myCanvas").height=new_height;
         document.getElementById("color").width=70;
