@@ -13,7 +13,7 @@
 
 
 #hd3{
-	display: inline-block;
+	width:fit-content;
 	color: red;
 	background-color: aliceblue;
 	font-family: fantasy;
