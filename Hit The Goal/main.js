@@ -3,8 +3,8 @@ var canvas = new fabric.Canvas("myCanvas")
 
 var ball_x = 0;
 var ball_y = 0;
-var hole_y = Math.floor(Math.random()*1040);
-var hole_x = Math.floor(Math.random()*440);
+var hole_y = 400;
+var hole_x = 800;
 
 var block_image_width = 5;
 var block_image_height = 5;
