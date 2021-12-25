@@ -10,7 +10,7 @@
 
 <link rel="stylesheet" type="text/css" href="game.css">
 
-<script src="game_login.js"></script>
+<script src="quiz_game_page.js"></script>
 </head>
 <body>
 	<center>
@@ -19,7 +19,7 @@
 		<h3>Player 1 Login for the game</h3>
 		<b>User Name:</b>
 		<br>
-		<input class="form-control player-name-input" type="text" placeholder="Player 1 Name">
+		<input id="player2_input" class="form-control player-name-input" type="text" placeholder="Player 1 Name">
 		<br>
 	</div>
 	<br>
@@ -27,11 +27,11 @@
 		<h3>Player 2 Login for the game</h3>
 		<b>User Name:</b>
 		<br>
-		<input class="form-control player-name-input" type="text" placeholder="Player 2 Name">
+		<input id="player1_input" class="form-control player-name-input" type="text" placeholder="Player 2 Name">
 		<br>
 	</div>
 	<br>
-	<button style="width: 409.8px;" class="s_button">Log in</button>
+	<button onclick="addUser()" style="width: 409.8px;" class="s_button">Log in</button>
 	</center>
 </body>
 </html>
