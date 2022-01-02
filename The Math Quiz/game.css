@@ -26,14 +26,15 @@ body
 {
 	letter-spacing: 5px;
 }
-#output
+#output_area
 {
-background: white;
+color:black;
 border-radius: 10px;
-border-top: 10px solid #AA4465;
 padding: 10px;
 float: none;
 text-align: left;
+background-color: white;
+border-top: 10px solid #AA4465;
 }
 
 .player-name-input{
