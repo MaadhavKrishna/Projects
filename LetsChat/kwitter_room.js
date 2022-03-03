@@ -1,4 +1,4 @@
-
+document.getElementById("user_name").innerHTML=localStorage.getItem("user_name");
 var firebaseConfig = {
       apiKey: "AIzaSyDh_2KD0OHWOPhHQ3OiWVjJR7gyZECWz-8",
       authDomain: "chatsapp-a633c.firebaseapp.com",
@@ -15,8 +15,17 @@ var firebaseConfig = {
 
 function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = "";snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
        Room_names = childKey;
-      //Start code
-
-      //End code
+       document.getElementById("output").innerHTML=document.getElementById("output").innerHTML+Room_names+"<br>";
       });});}
 getData();
+
+function logout(){
+      window.location="index.html";
+}
+
+function addRoom(){
+      room_name=document.getElementById("room_name").value;
+      firebase.database().ref("/").child(room_name).update({
+            Message:"Welcome to "+room_name+" room"
+      });
+}
